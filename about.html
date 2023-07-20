@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="shortcut icon" href="images/Logo sem texto.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img id="logo" src="images/Logo com texto.png">
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="./index.html">home</a></li>
+                    <li class="menu"><a href="./about.html">about us</a></li>
+                    <li class="menu"><a href="./index.html#perfumesehidratantes">perfumes & hidratantes</a></li>
+                    <li class="menu"><a href="./index.html#skincare">skincare</a></li>
+                    <li class="menu"><a href="./index.html#cabelo">cabelo</a></li>
+                    <li class="menu"><a href="./carrinho.html"><img id="carrinho" src="images/carrinho.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="caixa">
+        <h1 id="titulo">About Us</h1>
+        <img id="about" src="images/about us.jpg">
+        <p>Na nossa loja, acreditamos que a beleza é única em cada pessoa e que os cosméticos podem
+            realçar e celebrar essa individualidade. Somos apaixonados por ajudar nossos clientes a expressarem
+            sua personalidade única através de uma ampla gama de produtos de beleza e cuidados pessoais. <br>
+            Nosso compromisso é oferecer cosméticos de alta qualidade, que combinam ingredientes de primeira linha,
+            tecnologia inovadora e tendências da indústria da beleza. Trabalhamos com marcas renomadas e confiáveis,
+            garantindo que nossos clientes tenham acesso aos melhores produtos disponíveis no mercado. <br>
+            Acreditamos que a beleza vai além da aparência externa. É por isso que também nos preocupamos com a
+            sustentabilidade e a responsabilidade ambiental. Procuramos trabalhar com marcas que compartilham nossos
+            valores, utilizando embalagens eco-friendly e ingredientes naturais sempre que possível. <br>
+            Agradecemos por nos escolher como sua loja de cosméticos de confiança. Estamos ansiosos para ajudá-lo
+            a explorar o mundo da beleza e encontrar os produtos perfeitos para você. Junte-se a nós e descubra
+            uma experiência única de compras de cosméticos.
+        </p>
+
+        <form id="contact-form" method="post" action="">
+            <div class="form-group">
+                <label for="name">nome</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">sua experiência com a g-beauty</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">enviar</button>
+        </form>
+
+    </div>
+    <div class="contact">
+        <h3>nossas redes sociais <br> e meios de contato:</h3>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" id="img-contact" style="width: 50px;"></a>
+        <a href="https://www.whatsapp.com/?lang=pt_br"><img src="images/whatsapp.png" id="img-contact"
+                style="width: 45px;"></a>
+        <p id="instagram">@gbeauty</p>
+        <p id="whatsapp">(19) 98765-4321</p>
+    </div>
+</body>
+
+</html>

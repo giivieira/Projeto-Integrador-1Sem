@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="carrinho.js"></script>
+    <title>g-beauty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/Logo sem texto.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img id="logo" src="images/Logo com texto.png">
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="#">home</a>
+                    </li>
+                    <li class="menu"><a href="./about.html">about us</a></li>
+                    <li class="menu"><a href="./index.html#perfumesehidratantes">perfumes & hidratantes</a></li>
+                    <li class="menu"><a href="./index.html#skincare">skincare</a></li>
+                    <li class="menu"><a href="./index.html#cabelo">cabelo</a></li>
+                    <li class="menu"><a href="./carrinho.html"><img id="carrinho" src="images/carrinho.png" alt=""></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <h1 id="favoritos">favoritos da g-beauty</h1>
+
+    <div class="carousel">
+        <button class="prev-button">&lt;</button>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/diva fabulosa.png" alt="Image 1">
+                <h3 class="title"><a href="#">diva fabulosa <br> eudora - 100ml</a></h3>
+                <p>R$104,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/carolina herrera.jpg" alt="Image 2">
+                <h3 class="title"><a href="#">good girl eau de perfum<br> carolina herrera - 30ml</a></h3>
+                <p>R$317,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/gel de limpeza avene cleanence.png" alt="Image 3">
+                <h3 class="title"><a href="#">gel de limpeza avène <br> cleanance intense - 300g</a></h3>
+                <p>R$73,99</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/óleo eudora.jpg" alt="Image 4">
+                <h3 class="title"><a href="#">óleo capilar siàge nutri diamond <br> eudora - 110ml</a></h3>
+                <p>R$35,50</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/lola morte subita.jpg" alt="Image 5">
+                <h3 class="title"><a href="#">máscara morte súbita <br> lola - 450g</a></h3>
+                <p>R$54,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/chocochilli.png" alt="Image 6">
+                <h3 class="title"><a href="#">gloss labial chocochilli <br> franciny ehlke - 3,5 ml </a></h3>
+                <p>R$49,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/creme deleite.png" alt="Image 7">
+                <h3 class="title"><a href="#">loção hidratante corporal deleite + <br> body splash + sabonetes oboticário</a></h3>
+                <p>R$159,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/kit wella.jpg" alt="Image 8">
+                <h3 class="title"><a href="#">kit oil reflections <br> wella</a></h3>
+                <p>R$364,99</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/óleo elseve.jpg" alt="Image 9">
+                <h3 class="title"><a href="#">óleo extraordinário <br> lóreal elseve - 100ml </a></h3>
+                <p>R$43,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+            <div class="carousel-item">
+                <img class="product" src = "images/favoritos/loção cerave.jpg" alt="Image 10">
+                <h3 class="title"><a href="#">loção hidratante <br> cerave - 473ml</a></h3>
+                <p>R$75,90</p>
+                <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+            </div>
+        </div>
+        <button class="next-button">&gt;</button>
+    </div>
+    <section id="promocoes">
+        <h1 id="aproveite">aproveite!</h1>
+        <h1 id="clique">clique no título dos produtos para <br> obter mais informações</h1>
+        <div class="container">
+
+            <div class="deal-card">
+                <img class="product" src = "images/aproveite/combo 7 belo.jpg">
+                <div class="details">
+                    <h4 class="title"><a
+                            href="./7belo.html">combo
+                            7Belo <br> "quem disse, berenice?"</a></h4>
+                        <p id="desconto"><s>R$154,00</s></p>
+                        <p id="preco">R$119,90</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="deal-card">
+                <img class="product" src = "images/aproveite/kit loreal.jpg">
+                <div class="details">
+                    <h3 class="title"><a href="./loreal.html">kit loréal blondifier cool <br> shampoo + condicionador + <br> máscara de tratamento</a></h3>
+                    <p id="desconto"><s>R$499,90</s></p>
+                    <p id="preco">R$300,00</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="deal-card">
+                <img class="product" src ="images/aproveite/kit lily.jfif">
+                <div class="details">
+                    <h3 class="title"><a href="./lily.html">combo lily eau de perfum <br>perfume + creme hidratante </a></h3>
+                    <p id="desconto"><s>R$289,90</s></p>
+                    <p id="preco">R$225,35</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+        </div>
+        <section id="perfumesehidratantes">
+            <h1 id="favoritos">perfumes & hidratantes</h1>
+            <div class="card">
+                <img class="product" src = "images/perfumes e hidratantes/la vie est belle.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> la vie est belle intensément | lancôme 50ml </h3>
+                    <p id="preco">R$458,90</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+                <img class="product" src = "images/perfumes e hidratantes/scandal.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> scandal eau de parfum | jean paul gartier </h3>
+                    <p id="preco">R$515,99</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="product" src = "images/perfumes e hidratantes/kit kiss me.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> perfume + hidratante kiss me rosa marcante </h3>
+                    <p id="preco">R$139,89</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+                <img class="product" src = "images/perfumes e hidratantes/lady million.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> lady million fabulous | paco rabanne</h3>
+                    <p id="preco">R$309,90</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="product" src = "images/perfumes e hidratantes/kit lily lumiere.png">
+                <div class="informacoes">
+                    <h3 class="title"> kit creme hidratante lumiere + refil | by lily </h3>
+                    <p id="preco">R$199,80</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+                <img class="product" src = "images/perfumes e hidratantes/hidratante corporal morango.jfif">
+                <div class="informacoes">
+                    <h3 class="title"> hidratante corporal strawberry e milk | <br> oboticário </h3>
+                    <p id="preco">R$59,90</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="product" src = "images/perfumes e hidratantes/pure seduction hidratante.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> creme corporal hidratante pure seduction | <br> victoria secrets </h3>
+                    <p id="preco">R$95,99</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+                <img class="product" src = "images/perfumes e hidratantes/love spell.jpg">
+                <div class="informacoes">
+                    <h3 class="title"> creme corporal hidratante love spell | <br> victoria secrets </h3>
+                    <p id="preco">R$95,99</p>
+                    <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                </div>
+            </div>
+            <section id="skincare">
+                <h1 id="favoritos">skincare</h1>
+                <div class="card">
+                    <img class="product" src = "images/skincare/agua micelar loreal.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> água micelar bifásica 5 em 1 | l'óreal </h3>
+                        <p id="preco">R$35,90</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                    <img class="product" src = "images/skincare/gel garnier.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> gel de limpeza facial | actine 150g </h3>
+                        <p id="preco">R$25,90</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="product" src = "images/skincare/neutrogena hidratante.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> creme facial hidratante | neutrogena </h3>
+                        <p id="preco">R$57,19</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                    <img class="product" src = "images/skincare/creamy ácido mandélico.jfif">
+                    <div class="informacoes">
+                        <h3 class="title"> gel facial ácido mandélico | creamy </h3>
+                        <p id="preco">R$113,00</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="product" src = "images/skincare/vitamina c principia.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> sérum facial vitamina c-10 | principia </h3>
+                        <p id="preco">R$59,00</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                    <img class="product" src = "images/skincare/protetor solar l'oréal.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> protetor solar facial 30fps | l'oréal </h3>
+                        <p id="preco">R$33,99</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="product" src = "images/skincare/gel avene.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> gel de limpeza facial cleancence | avene </h3>
+                        <p id="preco">R$52,99</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                    <img class="product" src = "images/skincare/agua micelar la roche posay.jpg">
+                    <div class="informacoes">
+                        <h3 class="title"> água micelar | la roche-posay 200ml </h3>
+                        <p id="preco">R$69,99</p>
+                        <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <section id="cabelo">
+                    <h1 id="favoritos">cabelo</h1>
+                    <div class="card">
+                        <img class="product" src = "images/cabelo/lola kit cronograma.jpg">
+                        <div class="informacoes">
+                            <h3 class="title"> cronograma capilar | lola cosmetics </h3>
+                            <p id="preco">R$149,70</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                        <img class="product" src = "images/cabelo/eudora kit cabelo roxo.jpeg">
+                        <div class="informacoes">
+                            <h3 class="title"> kit acelera o crescimento | eudora </h3>
+                            <p id="preco">R$142,97</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="product" src = "images/cabelo/wella kit.png">
+                        <div class="informacoes">
+                            <h3 class="title"> kit professionals nutri-enrich | wella </h3>
+                            <p id="preco">R$323,91</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                        <img class="product" src = "images/cabelo/rapunzel lola.jpg">
+                        <div class="informacoes">
+                            <h3 class="title"> spray capilar rapunzel | lola 250ml </h3>
+                            <p id="preco">R$54,90</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="product" src = "images/cabelo/mascara kerastase.jpg">
+                        <div class="informacoes">
+                            <h3 class="title"> máscara capilar chroma captive | kerastase </h3>
+                            <p id="preco">R$324,90</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                        <img class="product" src = "images/cabelo/oleo kerastase.jpg">
+                        <div class="informacoes">
+                            <h3 class="title"> óleo finalizador elixir ultime | kerastase </h3>
+                            <p id="preco">R$252,17</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="product" src = "images/cabelo/cronograma loreal.png">
+                        <div class="informacoes">
+                            <h3 class="title"> kit cronograma capilar professional | l'oréal </h3>
+                            <p id="preco">R$379,50</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                        <img class="product" src = "images/cabelo/loreal shampoo e condicionador.jpg">
+                        <div class="informacoes">
+                            <h3 class="title"> shampoo + condicionador pro longer | l'oréal </h3>
+                            <p id="preco">R$464,90</p>
+                            <a href="#" class="buy-btn" onclick="message()">adicionar ao carrinho</a>
+                        </div>
+                    </div>
+
+
+                </section>
+            </section>
+            <footer>
+                <div class="contact">
+                    <h3>nossas redes sociais <br> e meios de contato:</h3>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" id="img-contact" style="width: 50px;"></a>
+                    <a href="https://www.whatsapp.com/?lang=pt_br"><img src="images/whatsapp.png" id="img-contact" style="width: 45px;"></a>
+                    <p id="instagram">@gbeauty</p>
+                    <p id="whatsapp">(19) 98765-4321</p>
+                </div>
+            </footer>
+            <script type="text/javascript" src="./carousel.js"></script>
+</body>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#carrinho {
+    width: 40px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #cc56c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #f00;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#caixa {
+    display: flex;
+}
+
+#caixa p {
+    position: absolute;
+    top: 145px;
+    font-size: 20px;
+    color: white;
+    font-family: Outfit;
+    width: 800px;
+    text-shadow: 1px 1px 2px black;
+    padding-left: 30px;
+    margin-top: 150px;
+}
+
+#titulo {
+    position: absolute;
+    top: 145px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#contact-form {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 150px;
+}
+
+#about {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+header {
+    background-color: #ffcaf2;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+#logo {
+    width: 300px;
+}
+
+.menu a {
+    font-family: Outfit;
+    font-size: 25px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    transition: 0.1s;
+    color: #d40b9f;
+}
+
+#favoritos {
+    font-family: Outfit;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 137px;
+    color: #e37ec8;
+    padding: 30px 10px
+}
+
+#aproveite {
+    font-family: Outfit;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    color: #e37ec8;
+}
+
+#clique {
+    font-family: Outfit;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #454545;
+}
+
+.carousel h3 {
+    font-family: Outfit;
+    font-size: 40px;
+    color: #000000;
+}
+
+.carousel h3 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.carousel p {
+    margin-top: 50px;
+    font-family: Outfit;
+    font-size: 40px;
+    color: #ff008c;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    z-index: 99px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#titulo {
+    font-size: 100px;
+}
+
+footer {
+    background-image: url(images/imagem\ capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    height: 400px;
+    margin-top: 180px;
+}
+
+.contact {
+    font-family: Outfit;
+    text-align: center
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0 2px 4px rgba(255, 0, 153, 0.2);
+}
+
+.contact #img-contact {
+    width: 50px;
+    margin-top: 90px;
+}
+
+#instagram {
+    font-size: 20px;
+    margin-right: 200px;
+    margin-top: -40px;
+}
+
+#whatsapp {
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 480px) {
+
+
+    header {
+        position: absolute;
+    }
+
+    #logo {
+        width: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    nav ul {
+        align-items: center;
+        text-align: center;
+        margin: -20px;
+    }
+
+    #search {
+        display: none;
+    }
+
+    .contact #img-contact {
+        margin-top: 130px;
+        width: 10px;
+        height: 50px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    #about {
+        margin-top: 55px;
+    }
+
+    #carrinho {
+        width: 30px;
+        margin-left: -20px;
+    }
+
+    #caixa p {
+        font-size: 10px;
+        display: inline-block;
+        width: 400px;
+        margin-top: -80px;
+        text-align: justify;
+        margin-left: 30px;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .contact {
+        margin-top: 400px;
+    }
+
+    .contact #img-contact {
+        margin-top: 10px;
+        width: 10px;
+        height: 50px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    #contact-form {
+        width: 400px;
+        height: 350px;
+        margin-left: 40px;
+        margin-top: 300px;
+    }
+
+}

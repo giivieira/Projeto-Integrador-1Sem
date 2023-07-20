@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffcaf2;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+#logo {
+    width: 300px;
+}
+
+#carrinho {
+    width: 40px;
+}
+
+.menu a {
+    font-family: Outfit;
+    font-size: 25px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    transition: 0.1s;
+    color: #d40b9f;
+}
+
+#favoritos {
+    font-family: Outfit;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 137px;
+    color: #e37ec8;
+    padding: 30px 10px
+}
+
+#aproveite {
+    font-family: Outfit;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    color: #e37ec8;
+}
+
+#clique {
+    font-family: Outfit;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #454545;
+}
+
+.carousel h3 {
+    font-family: Outfit;
+    font-size: 40px;
+    color: #000000;
+}
+
+.carousel h3 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.carousel p {
+    margin-top: 50px;
+    font-family: Outfit;
+    font-size: 40px;
+    color: #ff008c;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    z-index: 99px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    display: flex;
+}
+
+#search input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#search button {
+    background-color: #d40b9f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#login {
+    background-color: #d40b9f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #d40b9f;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 19%;
+    /* display 3 items at a time */
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.carousel-item p {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .carousel-container {
+        /* width: calc(100% - 40px); */
+    }
+
+    .carousel-item {
+        width: calc(100% / 2);
+    }
+
+    .carousel-item:last-child {
+        margin-right: 20px;
+    }
+}
+
+
+.deal-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.deal-card a {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.deal-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.deal-card button {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deal-card button:hover {
+    background-color: #ffa500;
+}
+
+.deal-card img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.details {
+    font-family: Outfit;
+    text-decoration: none;
+}
+
+#desconto {
+    color: #888888;
+    margin-top: 10px;
+}
+
+.preco {
+    font-size: 25px;
+    color: #e37ec8;
+}
+
+#promocoes {
+    background-color: #d3d3d3;
+}
+
+.buy-btn {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 20px;
+    font-family: Outfit;
+}
+
+.buy-btn:hover {
+    text-decoration: underline;
+}
+
+#perfumesehidratantes {
+    background-color: #ffffff;
+    /* display: block; */
+}
+
+#perfumesehidratantes div img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.informacoes {
+    font-family: Outfit;
+    font-size: 20px;
+    margin-top: 100px;
+    display: block;
+}
+
+#skincare {
+    background-color: #ffffff;
+    padding: 25px 0;
+    display: block;
+}
+
+#skincare img {
+    width: 250px;
+    max-width: 100%
+}
+
+#cabelo {
+    background-color: #ffffff;
+    padding: 25px 0;
+    display: block;
+}
+
+footer {
+    background-image: url(images/imagem\ capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    height: 400px;
+}
+
+.contact {
+    font-family: Outfit;
+    text-align: center
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0 2px 4px rgba(255, 0, 153, 0.2);
+}
+
+.contact #img-contact {
+    width: 50px;
+    margin-top: 90px;
+    max-width: 100%
+}
+
+#instagram {
+    font-size: 20px;
+    margin-right: 200px;
+    margin-top: -40px;
+}
+
+#whatsapp {
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+
+.social {
+    font-size: 500px;
+}
+
+#map {
+    flex-basis: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        position: absolute;
+    }
+
+    #logo {
+        display: none;
+
+    }
+
+    .menu a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        align-items: center;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #favoritos {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .carousel h3 a {
+        font-size: 12px;
+    }
+
+    .carousel-item p {
+        font-size: 11px;
+    }
+
+    .buy-btn {
+        font-size: 15px;
+    }
+
+    #aproveite {
+        font-size: 30px;
+    }
+
+    #clique {
+        font-size: 15px;
+    }
+
+    .deal-card {
+        padding: 2px;
+        margin: 18px 80px;
+    }
+
+    .deal-card a {
+        font-size: 16px;
+    }
+
+    .deal-card p {
+        font-size: 10px;
+    }
+
+    .deal-card button {
+        padding: 5px 10px;
+
+    }
+
+    #preco {
+        font-size: 17px;
+    }
+
+    #desconto {
+        font-size: 14px;
+    }
+
+    .deal-card img {
+        width: 100px;
+    }
+
+    .container {
+        max-width: 100%;
+        justify-content: center;
+        display: inline;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #perfumesehidratantes div img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #perfumesehidratantes div h3 {
+        font-size: 20px;
+
+    }
+
+    .informacoes {
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .contact #img-contact {
+        margin-top: 130px;
+        width: 10px;
+        height: 50px;
+    }
+
+    #carrinho {
+        width: 30px;
+        margin-left: -20px;
+    }
+
+}

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffcaf2;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#carrinho {
+    width: 40px;
+}
+
+#logo {
+    width: 300px;
+}
+
+.menu a {
+    font-family: Outfit;
+    font-size: 25px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    transition: 0.1s;
+    color: #d40b9f;
+}
+
+#favoritos {
+    font-family: Outfit;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 137px;
+    color: #e37ec8;
+    padding: 30px 10px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    z-index: 99px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    display: flex;
+}
+
+#search input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#search button {
+    background-color: #d40b9f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.product {
+    width: 500px;
+    margin-top: 260px;
+    margin-left: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(255, 0, 153, 0.61);
+}
+
+#detalhes {
+    font-family: Outfit;
+    display: flex;
+    flex-direction: column;
+    margin-left: 725px;
+    margin-top: -420px;
+}
+
+#nome {
+    color: #d40b9f;
+    font-size: 40px;
+}
+
+#descricao {
+    color: #575656;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#desconto {
+    color: rgba(112, 112, 112);
+    font-size: 20px;
+}
+
+.preco {
+    color: #eb72ca;
+    font-size: 25px;
+}
+
+#parcelamento {
+    color: rgba(112, 112, 112);
+    font-size: 15px;
+    margin-left: 110px;
+    margin-top: -25px;
+}
+
+#resenha {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+#buy-btn {
+    width: 250px;
+    font-family: Outfit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbf8f4b7;
+    border-color: #000000;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#buy-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrinho {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+footer {
+    background-image: url(images/imagem\ capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    height: 400px;
+    margin-top: 180px;
+}
+
+.contact {
+    font-family: Outfit;
+    text-align: center
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0 2px 4px rgba(255, 0, 153, 0.2);
+}
+
+.contact #img-contact {
+    width: 50px;
+    margin-top: 90px;
+}
+
+#instagram {
+    font-size: 20px;
+    margin-right: 200px;
+    margin-top: -40px;
+}
+
+#whatsapp {
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        position: absolute;
+    }
+
+    #logo {
+        display: none;
+
+    }
+
+    .menu a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        align-items: center;
+    }
+
+    #search {
+        display: none;
+    }
+
+    .product {
+        width: 250px;
+        height: 250px;
+        margin-top: 100px;
+        margin-left: 120px;
+    }
+
+    .title {
+        font-size: 23px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    #descricao {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    #resenha {
+        font-size: 15px;
+        text-align: justify;
+        padding: 14px;
+    }
+
+    #detalhes {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .contact #img-contact {
+        margin-top: 130px;
+        width: 10px;
+        height: 50px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    #carrinho {
+        width: 30px;
+        margin-left: -20px;
+    }
+}

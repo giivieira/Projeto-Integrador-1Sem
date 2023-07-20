@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="carrinho.css">
+    <link rel="shortcut icon" href="images/Logo sem texto.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="carrinho.js"></script>
+    <title>carrinho de compras</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img id="logo" src="images/Logo com texto.png">
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="./index.html#home">home</a>
+                    </li>
+                    <li class="menu"><a href="./about.html">about us</a></li>
+                    <li class="menu"><a href="./index.html#perfumesehidratantes">perfumes
+                            & hidratantes</a></li>
+                    <li class="menu"><a href="./index.html#skincare">skincare</a>
+                    </li>
+                    <li class="menu"><a href="./index.html#cabelo">cabelo</a>
+                    </li>
+                    <li class="menu"><a href="./carrinho.html"><img id="carrinho" src="images/carrinho.png" alt=""></a>
+                    </li>
+            </nav>
+        </div>
+    </header>
+    <div class="page-title">carrinho de compras</div>
+    <div class="content">
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>produto</th>
+                        <th>preço</th>
+                        <th>quantidade</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="images/aproveite/combo 7 belo.jpg" alt="" />
+                                <div class="name">combo | 7Belo "quem disse, berenice?"</div>
+                        </td>
+                        <td id="preco">R$ 119,90</td>
+                        <td>
+                            <div class="qty">
+                                <button onclick="remo(this)"><i class="bx bx-minus">-</i></button>
+                                <p class="quantidade">1</p>
+                                <button onclick="add(this)"><i class="bx bx-plus">+</i></button>
+                            </div>
+                        </td>
+                        <td id="total">R$119,90</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+                </footer>
+            </div>
+            <button id="finalizar"><a onclick="message()">Finalizar Compra</a></button>
+        </aside>
+    </div>
+    </main>
+    <script type="text/javascript" src="./carrinho.js"></script>
+</body>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
